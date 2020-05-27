@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="properties, lands, real estate, rents and sales">
+    <meta name="Author" content="Shina Akintomide">
+
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+    <title> Real Estate & Properties </title>
+
+    <link rel="stylesheet" type="text/css" href="\css\a_reset.css">
+    <link rel="stylesheet" type="text/css" href="\css\style_index.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="index.html"> <img class="weblogo" src="/images/logo3.jpg" alt="site logo"> </a>
+        <h1> real property alert </h1>
+        <p id="p1"> we sell and buy the affordable </p>
+        <hr>
+        <hr>
+        <nav class="topnav">
+            <ul>
+                <li> <a href="index.html">Home</a> </li> 
+                <li class = "dropdown"> <a href="javascript:void" class = "dropbtn">Property Alert</a> 
+                    <div class="dropdown-content">
+                        <a href="#">Joint Venture Property</a>
+                        <a href="#">Property for Sale</a>
+                        <a href="#">Lease</a>
+                      </div>
+                </li>
+                <li class = "dropdown"> <a href="javascript:void(0)" class = "dropbtn">Rent & Sales</a> 
+                    <div class="dropdown-content">
+                        <a href="#">Items</a>
+                        <a href="#">Rents</a>
+                        <a href="#">Sales</a>
+                      </div>
+                </li>
+                <li> <a href="about.html">About Us</a> <li>
+                <li> <span id="tel"> Tel : +2348134423261 </span> </li>
+            </ul>
+        </div>
+    </nav>   
+    
+    <div class="maincont">
+
+        <div class="container" style="max-width:900px">
+            <div class="mySlides">
+                <img src="/images/gallery-home/hplarge1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="/images/gallery-home/hplarge2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="/images/gallery-home/hplarge3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="/images/logo2_wide.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <img src="/images/logo2_wide.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+
+                <p> <a id="caption" href="https://www.w3schools.com/html/"></a> </a></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="/images/gallery-home/hpsmall1.png" style="width:100%" onclick="currentSlide(1)"
+                        alt="The Woods: Click to see more images">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/images/gallery-home/hpsmall2.png" style="width:100%" onclick="currentSlide(2)"
+                        alt="Cinque Terre : Click to see more images">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/images/gallery-home/hpsmall3.png" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords : Click to see more images">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights : Click to see more images">
+                </div>
+               <div class="column">
+                    <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights : Click to see more images">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <p> Contact </p>
+            <p> WhatsApp : +2348134423261 </p>
+            <p> E-mail: realpropertyalert@outlook.com </p>
+            <p> Facebook : </p>
+            <p> Instagram : </p>
+        </div>
+
+       <div class="address">
+           
+            <p> Address </p>
+            <p> Real Property Alert </p>
+            <p> 88 Topwood Avenue </p>
+            <p> Turkey </p>
+            <p> L7P000 </p>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+</body>
+
+</html>
