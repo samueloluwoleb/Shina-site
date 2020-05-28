@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background-color: white;
+}
+
+.header {
+  position: relative;
+  background-color: #1d3855;
+  color: white;
+  
+}
+
+.weblogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 105px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: Roboto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+#p1 { text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 6px; 
+}
+
+hr {
+    padding-top: 0px;
+    margin-top: 1px;
+    margin-bottom: 0px; 
+
+}
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    position : relative;
+    height: 46px;
+ 
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    color: aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+   
+  }
+
+
+  .topnav span {
+    position: absolute;
+    right : 5px;
+    color:aqua;
+    top: 12px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006A4D;;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #1F3855;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F3855;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #2B4560;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+    .maincont {
+      background-color: white;
+      text-align: center;
+      color: black;
+      max-width: 600px;
+      margin: auto;
+      margin-top: 50px;
+      font-size: 35px;
+      font-family: Tangerine, serif;
+
+    }
+h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+  
+    .footer {
+      position : relative;
+      width: 100%;
+      background-color: #1d3855;
+      overflow: auto;
+      height: 170px;
+      color: white;
+      
+    }
+    
+    .contact {
+      width: auto;
+      position: absolute;
+      font-size: 20px;
+      left: 200px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      
+    }
+  
+    .address {
+      width: auto;
+      position: absolute;
+      font-size: 20px;
+      right : 200px;  
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
